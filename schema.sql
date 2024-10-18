@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS Dept_emp (
 
 -- data/dept_manager.csv 24 rows
 CREATE TABLE IF NOT EXISTS Dept_manager (
-    dept_no CHAR(4),
+    dept_no CHAR(4) NOT NULL,
     emp_no INT PRIMARY KEY,
     FOREIGN KEY (dept_no) REFERENCES Departments (dept_no),
     FOREIGN KEY (emp_no) REFERENCES Employees (emp_no)
